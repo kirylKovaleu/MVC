@@ -1,0 +1,82 @@
+﻿@model Auction.Models.ProductDTOModel
+
+@{
+    ViewBag.Title = @App_LocalResources.GlobalRes.УдалитьПродукт;
+}
+
+@{
+    string url = Request.Url.ToString();
+}
+
+
+<h3>@App_LocalResources.GlobalRes.ВнатуреУдалишь</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TheRestOfTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TheRestOfTime.Days)d
+            @Html.DisplayFor(model => model.TheRestOfTime.Hours)h
+            @Html.DisplayFor(model => model.TheRestOfTime.Minutes)m
+            @Html.DisplayFor(model => model.TheRestOfTime.Seconds)s
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Base64Picture)
+        </dt>
+        <dd>
+            <img src="data:image;base64,@Model.Base64Picture" height="300" width="400" />
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.СategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.СategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartPrice)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink(App_LocalResources.GlobalRes.АМожетНеНадо, "Index")
+        </div>
+    }
+</div>

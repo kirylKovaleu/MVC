@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = @App_LocalResources.GlobalRes.ОкончаниеРегистрации;
+}
+
+<h2>@App_LocalResources.GlobalRes.НуВотЕщеНаОдногоСталоБольше</h2>
+<h2>@App_LocalResources.GlobalRes.РегистрацияЗавершена 
+    @Html.ActionLink(App_LocalResources.GlobalRes.Логин,"Login","User")</h2>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

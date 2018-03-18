@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = @App_LocalResources.GlobalRes.Контакты;
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+</hgroup>
+
+<section class="contact">
+    <header>
+        <h3>@App_LocalResources.GlobalRes.ИмяИФамилия</h3>
+    </header>
+    <p>
+        Кирилл Ковалев
+    </p>
+</section>
+
+<section class="contact">
+    <header>
+        <h3>@App_LocalResources.GlobalRes.Phone</h3>
+    </header>
+    <p>
+        <span class="label">Main:</span>
+        <span>Мобильный</span>
+    </p>
+</section>
+
+<section class="contact">
+    <header>
+        <h3>@App_LocalResources.GlobalRes.Email</h3>
+    </header>
+    <p>
+        <span class="label">Support:</span>
+        <span><a href="mailto:Support@example.com">kirya615@gmail.com</a></span>
+    </p>
+</section>
+
+<section class="contact">
+    <header>
+        <h3>@App_LocalResources.GlobalRes.Адресс</h3>
+    </header>
+    <p>
+        До востребования<br />
+    </p>
+</section>
+
+<div>
+    @Html.ActionLink(App_LocalResources.GlobalRes.Назад, "Index")
+</div>
+

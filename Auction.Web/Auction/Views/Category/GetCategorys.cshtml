@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Auction.Models.CategoryModel>
+@using System.Security.Claims
+@{
+    var claimsIdentity = User.Identity as ClaimsIdentity;
+}
+
+@if (User != null && User.Identity.IsAuthenticated && claimsIdentity.HasClaim(ClaimTypes.Role, "Admin"))
+{
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.Добавить, "AddCategory")</h3>
+}
+
+@if (Model == null)
+{
+    <h2>@App_LocalResources.GlobalRes.КатегорийНеОбнаружено</h2>
+}
+
+else
+{
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.RouteLink(item.Name, new { controller = "Product", action = "SortCategory", area = "", @item.Id })
+        </td>
+        <td>
+            @Html.ActionLink(App_LocalResources.GlobalRes.ДляТехКомуНеПонятно, "DiscriptionShow", new { id = item.Id })
+        </td>
+          @if (User != null && User.Identity.IsAuthenticated && claimsIdentity.HasClaim(ClaimTypes.Role, "Admin") || claimsIdentity.HasClaim(ClaimTypes.Role, "Manager"))
+          {
+            <td>@Html.ActionLink(App_LocalResources.GlobalRes.Удалить, "DeletCategory", new { id = item.Id })</td>
+            <td>@Html.ActionLink(App_LocalResources.GlobalRes.Редактировать, "EditCategory", new { id = item.Id })</td>
+          }
+            </tr>
+}
+        </table>
+}

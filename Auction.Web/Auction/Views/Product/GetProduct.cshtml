@@ -1,0 +1,71 @@
+﻿@model Auction.Models.ProductDTOModel
+
+@{
+    string url = Request.Url.ToString();
+}
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TheRestOfTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TheRestOfTime.Days)d
+            @Html.DisplayFor(model => model.TheRestOfTime.Hours)h
+            @Html.DisplayFor(model => model.TheRestOfTime.Minutes)m
+            @Html.DisplayFor(model => model.TheRestOfTime.Seconds)s
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Base64Picture)
+        </dt>
+        <dd>
+            <img src="data:image;base64,@Model.Base64Picture" height="300" width="400"/>
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.СategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.СategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartPrice)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.RouteLink(App_LocalResources.GlobalRes.СделатьСтавку, new { controller = "Bid", action = "CreateBid", area = "", @Model.Id, url })
+    @Html.ActionLink(App_LocalResources.GlobalRes.ДПоберегиТыДеньги, "Index")
+</p>

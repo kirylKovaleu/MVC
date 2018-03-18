@@ -1,0 +1,70 @@
+﻿@model Auction.Models.LoginUserModel
+
+@{
+    ViewBag.Title = @App_LocalResources.GlobalRes.УдалениеПользователя;
+}
+
+
+<h3>Зачем удаляешь? Может он человек хороший..</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegistrionDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegistrionDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="@App_LocalResources.GlobalRes.Удалить" class="btn btn-default" /> |
+            @Html.ActionLink(App_LocalResources.GlobalRes.АМожетНеНадо, "ShowAllUsers", "AdminCabinet");
+        </div>
+    }
+</div>

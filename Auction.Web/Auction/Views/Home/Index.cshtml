@@ -1,0 +1,18 @@
+﻿@model Auction.Models.AuctionModel
+<div class="float-left">
+    <p class="site-title">@App_LocalResources.GlobalRes.ДоброПожаловать</p>
+</div>
+<p><img src="/Images/Auction.jpg" alt="Пример" width="940" height="500"></p>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        @Html.DropDownListFor(model => model.Name, (IEnumerable<SelectListItem>)ViewBag.auctiones, "Аукционы")
+    </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Перейти" class="btn btn-default" />
+                </div>
+            </div>
+}

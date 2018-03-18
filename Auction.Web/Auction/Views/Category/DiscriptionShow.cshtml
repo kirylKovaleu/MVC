@@ -1,0 +1,32 @@
+﻿@model Auction.Models.CategoryModel
+
+@{
+    ViewBag.Title = "DiscriptionShow";
+}
+
+<h2>@App_LocalResources.GlobalRes.Описание</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink(App_LocalResources.GlobalRes.Назад, "GetCategorys")
+</p>

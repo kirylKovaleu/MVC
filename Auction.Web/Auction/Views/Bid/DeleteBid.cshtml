@@ -1,0 +1,55 @@
+﻿@model Auction.Models.BidModel
+
+@{
+    ViewBag.Title = "DeleteBid";
+}
+
+
+<h3>@App_LocalResources.GlobalRes.Удалить</h3>
+<div>
+    <h4>BidModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="@App_LocalResources.GlobalRes.Удалить" class="btn btn-default" /> |
+            @Html.ActionLink(App_LocalResources.GlobalRes.Назад, "Index")
+        </div>
+    }
+</div>

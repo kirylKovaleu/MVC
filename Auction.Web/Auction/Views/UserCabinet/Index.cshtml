@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = User.Identity.Name;
+}
+
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.РедактироватьЛичныеДанные, "PersonalData", "UserCabinet")</h3>
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.ПросмотретьСписокВыставленныхСвоихТоваров, "ShowMyProduct", "UserCabinet")</h3>
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.ПросмотретьСписокМоихСтавок, "ShowMyBid", "UserCabinet")</h3>
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.ДобавитьПродукт, "AddProduct", "Product")</h3>
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.СлезноПопраситьАдминаОПовышенииСтатуса, "AddProduct", "Product")</h3>
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.ПоказатьВсеПродукты, "Index", "Product")</h3>
+

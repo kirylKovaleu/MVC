@@ -1,0 +1,75 @@
+﻿
+@using System.Security.Claims
+@{
+    var claimsIdentity = User.Identity as ClaimsIdentity;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <meta name="description" content="The description of my page" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p class="site-title">@Html.ActionLink(@App_LocalResources.GlobalRes.Аукцион, "Index", "Product")</p>
+        </div>
+
+        @using (Html.BeginForm("ChangeCulture", "User"))
+        {
+            <select name="lang">
+                <option disabled selected>@App_LocalResources.GlobalRes.Язык</option>
+                <option value="ru">@App_LocalResources.GlobalRes.Русский</option>
+                <option value="en">@App_LocalResources.GlobalRes.Англиский</option>
+                <option value="br">@App_LocalResources.GlobalRes.Беларуский</option>
+            </select>
+            <input type="submit" name="submit" value="@App_LocalResources.GlobalRes.Применить">
+        }
+
+            <div class="float-right">
+                <section id="login">
+                    @Html.Partial("_LoginPartial")
+                </section>
+                <nav>
+                    <ul id="menu">
+                        @if (User != null && User.Identity.IsAuthenticated && claimsIdentity.HasClaim(ClaimTypes.Role, "User"))
+                        {
+                            <li>@Html.ActionLink(App_LocalResources.GlobalRes.ЛичныйКабинет + " " +@User.Identity.Name, "Index", "UserCabinet")</li>
+                        }
+                        @if (User != null && User.Identity.IsAuthenticated && claimsIdentity.HasClaim(ClaimTypes.Role, "Admin"))
+                        {
+                            <li>@Html.ActionLink(App_LocalResources.GlobalRes.Администратор + " " + @User.Identity.Name, "AdminPanel", "AdminCabinet")</li>
+                        }
+                        @if (User != null && User.Identity.IsAuthenticated && claimsIdentity.HasClaim(ClaimTypes.Role, "Manager"))
+                        {
+                            <li>@Html.ActionLink(App_LocalResources.GlobalRes.Менеджер + " " + @User.Identity.Name, "Index", "ManagerCabinet")</li>
+                        }
+                    </ul>
+                </nav>
+            </div>
+    </div>
+    <div id="body">
+        @RenderSection("SubHeader", false)
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
+    </div>
+        
+        <footer>
+            <div class="site-title">
+                <h4> @Html.ActionLink(App_LocalResources.GlobalRes.Контакты, "Contact","Home")</h4>
+            </div>
+            <h5>@DateTime.Now</h5>
+            
+        </footer>
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+</body>
+</html>

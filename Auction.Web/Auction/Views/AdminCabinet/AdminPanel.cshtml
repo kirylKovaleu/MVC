@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = User.Identity.Name;
+}
+
+
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.ДобавитьПродукт, "AddProduct", "Product")</h3>
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.ПросмотретьВсехПользователей, "ShowAllUsers", "AdminCabinet")</h3>
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.ПоказатьВсеПродукты, "Index", "Product")</h3>
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.ОСебеЛюбимом, "AddCategory", "Category")</h3>
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.ПоказатьОтчетПоBANNEDПродуктам, "ShowAllBannedProduct", "AdminCabinet")</h3>
+<h3>@Html.ActionLink(App_LocalResources.GlobalRes.РедактированиеКатегорий, "GetCategorys", "Category")</h3>

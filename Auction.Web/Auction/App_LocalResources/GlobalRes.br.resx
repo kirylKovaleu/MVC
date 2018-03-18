@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LocalAndZone" xml:space="preserve">
+    <value>Адлюстраванне даты , часу і мовы</value>
+  </data>
+  <data name="Автомобили" xml:space="preserve">
+    <value>Аўтамабілі</value>
+  </data>
+  <data name="Администратор" xml:space="preserve">
+    <value>Адміністратар</value>
+  </data>
+  <data name="АМожетНеНадо" xml:space="preserve">
+    <value>А можа не трэба</value>
+  </data>
+  <data name="Англиский" xml:space="preserve">
+    <value>Англиский</value>
+  </data>
+  <data name="Англия" xml:space="preserve">
+    <value>Англія</value>
+  </data>
+  <data name="Аукцион" xml:space="preserve">
+    <value>Аукцыён</value>
+  </data>
+  <data name="АЧтоРазвеНеВидноЧтоАукционЗакончилсяЕщеВТомГодуЛанПосмотриДругие" xml:space="preserve">
+    <value>А што хіба не відаць што аўкцыён скончыўся яшчэ ў тым годзе ? Лан паглядзі іншыя</value>
+  </data>
+  <data name="Беларуский" xml:space="preserve">
+    <value>Беларускі</value>
+  </data>
+  <data name="Беларусь" xml:space="preserve">
+    <value>Беларусь</value>
+  </data>
+  <data name="ВнатуреУдалишь" xml:space="preserve">
+    <value>Унатурэ адвядзеш</value>
+  </data>
+  <data name="ВремяДоОкончания" xml:space="preserve">
+    <value>Час да заканчэння</value>
+  </data>
+  <data name="Всего2Поля" xml:space="preserve">
+    <value>Усяго 2 полi , і тое ўмудрыўся не ўсе запоўніць</value>
+  </data>
+  <data name="ВсеПродуктыBanned" xml:space="preserve">
+    <value>Усе прадукты Banned</value>
+  </data>
+  <data name="Вход" xml:space="preserve">
+    <value>Уваход</value>
+  </data>
+  <data name="ВыбратьКатегорию" xml:space="preserve">
+    <value>Выбраць катэгорыю</value>
+  </data>
+  <data name="ВыставимНавсегда" xml:space="preserve">
+    <value>А давай мы выставім гэта назаўжды ?</value>
+  </data>
+  <data name="ДавайНеБудем" xml:space="preserve">
+    <value>Давай не будзем</value>
+  </data>
+  <data name="ДатьДобро" xml:space="preserve">
+    <value>Даць дабро</value>
+  </data>
+  <data name="ДляТехКомуНеПонятно" xml:space="preserve">
+    <value>Для тых , каму не зразумела</value>
+  </data>
+  <data name="Добавить" xml:space="preserve">
+    <value>Дадаць</value>
+  </data>
+  <data name="ДобавитьКатегорию" xml:space="preserve">
+    <value>Дадаць катэгорыю</value>
+  </data>
+  <data name="ДобавитьНовый" xml:space="preserve">
+    <value>Дадаць новы</value>
+  </data>
+  <data name="ДобавитьПродукт" xml:space="preserve">
+    <value>Дадаць прадукт</value>
+  </data>
+  <data name="ДоброПожаловать" xml:space="preserve">
+    <value>Сардэчна запрашаем на аўкцыён</value>
+  </data>
+  <data name="Домашняя" xml:space="preserve">
+    <value>Хатняя</value>
+  </data>
+  <data name="ДПоберегиТыДеньги" xml:space="preserve">
+    <value>Ды пашкадую ты грошы</value>
+  </data>
+  <data name="ЗарегистрированыеПользователи" xml:space="preserve">
+    <value>Зарэгістраваны карыстальнікі</value>
+  </data>
+  <data name="ЗарегишсяБумбараш" xml:space="preserve">
+    <value>Ня запоўніш лагін , зарегишся як ' Бумбараш</value>
+  </data>
+  <data name="ЗачемУдаляешьМожетОнЧеловекХороший" xml:space="preserve">
+    <value>Навошта выдаляць ? Можа ён чалавек добры</value>
+  </data>
+  <data name="ИгрушкиДляВзрослых" xml:space="preserve">
+    <value>Ну і вядома цацкі для дарослых</value>
+  </data>
+  <data name="Изменить" xml:space="preserve">
+    <value>Змяніць</value>
+  </data>
+  <data name="ИзменитьПароль" xml:space="preserve">
+    <value>Змяніць пароль</value>
+  </data>
+  <data name="ИзменитьФамилиюИмя" xml:space="preserve">
+    <value>Змяніць Імя і Прозвішча</value>
+  </data>
+  <data name="Изображение" xml:space="preserve">
+    <value>Малюнак</value>
+  </data>
+  <data name="Имя" xml:space="preserve">
+    <value>Імя</value>
+  </data>
+  <data name="КакиеСтавкиУТебяДенегНет" xml:space="preserve">
+    <value>Якія стаўкі ? У цябе ж грошай няма</value>
+  </data>
+  <data name="КакНазывать" xml:space="preserve">
+    <value>Ну і як гэта цуд называць ?</value>
+  </data>
+  <data name="какНибудьПоясни" xml:space="preserve">
+    <value>Ну хоць як небудзь патлумач , ці мала туговато ... не зразумеюць яшчэ</value>
+  </data>
+  <data name="КатегорийНеОбнаружено" xml:space="preserve">
+    <value>Катэгорый не выяўлена</value>
+  </data>
+  <data name="Категория" xml:space="preserve">
+    <value>Катэгорыя</value>
+  </data>
+  <data name="Контакты" xml:space="preserve">
+    <value>Кантакты</value>
+  </data>
+  <data name="ЛичныйКабинет" xml:space="preserve">
+    <value>Асабісты кабінет</value>
+  </data>
+  <data name="Логин" xml:space="preserve">
+    <value>Лагін</value>
+  </data>
+  <data name="Менеджер" xml:space="preserve">
+    <value>Менеджэр</value>
+  </data>
+  <data name="МобильныеТелефоны" xml:space="preserve">
+    <value>Мабільныя тэлефоны</value>
+  </data>
+  <data name="МожетНеНадо" xml:space="preserve">
+    <value>Можа не трэба ? А ?</value>
+  </data>
+  <data name="МоиТовары" xml:space="preserve">
+    <value>Мае тавары</value>
+  </data>
+  <data name="НаГлавную" xml:space="preserve">
+    <value>На галоўную</value>
+  </data>
+  <data name="Назад" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="Название" xml:space="preserve">
+    <value>Назва</value>
+  </data>
+  <data name="НачальнаяЦена" xml:space="preserve">
+    <value>Пачатковы кошт</value>
+  </data>
+  <data name="НезнаешьВоСколькоОценить" xml:space="preserve">
+    <value>Незнаешь у колькі ацаніць ?</value>
+  </data>
+  <data name="НиЧеНеПропустил" xml:space="preserve">
+    <value>Ні чэ не прапусціў ?</value>
+  </data>
+  <data name="НуВотЕщеНаОдногоСталоБольше" xml:space="preserve">
+    <value>Ну вось ... яшчэ на аднаго стала больш</value>
+  </data>
+  <data name="НуДавайУжеДобавим" xml:space="preserve">
+    <value>Ну давай уже дадамо</value>
+  </data>
+  <data name="Одежда" xml:space="preserve">
+    <value>Адзенне</value>
+  </data>
+  <data name="Одумайся" xml:space="preserve">
+    <value>Абдумайся</value>
+  </data>
+  <data name="ОдумайсяОнТебяПодсидит" xml:space="preserve">
+    <value>Абдумайся !!! ён цябе подсядiць</value>
+  </data>
+  <data name="ОкончаниеРегистрации" xml:space="preserve">
+    <value>Заканчэнне рэгістрацыі</value>
+  </data>
+  <data name="Описание" xml:space="preserve">
+    <value>Апісанне</value>
+  </data>
+  <data name="ОСебеЛюбимом" xml:space="preserve">
+    <value>Пра сябе любімым</value>
+  </data>
+  <data name="Пароль" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="ПерсональныеДанные" xml:space="preserve">
+    <value>Персанальныя Дадзеныя</value>
+  </data>
+  <data name="ПлохоеИмя" xml:space="preserve">
+    <value>На столькі дрэннае імя , што не запоўніў ?</value>
+  </data>
+  <data name="ПовыситьСтатусПользователя" xml:space="preserve">
+    <value>Павысіць статус карыстальніка</value>
+  </data>
+  <data name="Поздравляю" xml:space="preserve">
+    <value>Віншую</value>
+  </data>
+  <data name="ПоказатьВсеПродукты" xml:space="preserve">
+    <value>Паказаць усе прадукты</value>
+  </data>
+  <data name="ПоказатьКатегории" xml:space="preserve">
+    <value>Паказаць катэгорыі</value>
+  </data>
+  <data name="ПоказатьОтчетПоBANNEDПродуктам" xml:space="preserve">
+    <value>Паказаць справаздачу па BANNED прадуктам</value>
+  </data>
+  <data name="ПолеНужноЗаполнить" xml:space="preserve">
+    <value>А ні чаго , што гэта поле трэба запоўніць ?</value>
+  </data>
+  <data name="ПравильноДеньгиЦелееБудут" xml:space="preserve">
+    <value>Правільна , грошы цалей будуць</value>
+  </data>
+  <data name="Применить" xml:space="preserve">
+    <value>Прымяніць</value>
+  </data>
+  <data name="ПродлитьАукцион" xml:space="preserve">
+    <value>Падоўжыць аўкцыён</value>
+  </data>
+  <data name="Продолжительность" xml:space="preserve">
+    <value>Працягласць</value>
+  </data>
+  <data name="ПродолжительностьДоПозавчера" xml:space="preserve">
+    <value>Працягласць да ... пазаўчора ? Ну молодец</value>
+  </data>
+  <data name="ПродуктыКатегорииУдалены" xml:space="preserve">
+    <value>Увага !!! Усе прадукты дадзенай катэгорыі будуць выдаленыя.</value>
+  </data>
+  <data name="ПросмотретьВсехПользователей" xml:space="preserve">
+    <value>Праглядзець ўсіх карыстальнікаў</value>
+  </data>
+  <data name="ПросмотретьСписокВыставленныхСвоихТоваров" xml:space="preserve">
+    <value>Паглядзець сьпіс выстаўленых сваіх тавараў</value>
+  </data>
+  <data name="ПросмотретьСписокМоихСтавок" xml:space="preserve">
+    <value>Паглядзець сьпіс маіх ставак</value>
+  </data>
+  <data name="ПросмотретьСписокСтавок" xml:space="preserve">
+    <value>Паглядзець сьпіс ставак</value>
+  </data>
+  <data name="Регистрация" xml:space="preserve">
+    <value>Рэгістрацыя</value>
+  </data>
+  <data name="РегистрацияЗавершена" xml:space="preserve">
+    <value>Рэгістрацыя паспяхова завершина , вы можаце ўвайсці пад сваім</value>
+  </data>
+  <data name="РедактированиеКатегорий" xml:space="preserve">
+    <value>Рэдагаванне катэгорый</value>
+  </data>
+  <data name="Редактировать" xml:space="preserve">
+    <value>Рэдагаваць</value>
+  </data>
+  <data name="РедактироватьЛичныеДанные" xml:space="preserve">
+    <value>Рэдагаваць асабістыя дадзеныя</value>
+  </data>
+  <data name="Россия" xml:space="preserve">
+    <value>Расія</value>
+  </data>
+  <data name="Русский" xml:space="preserve">
+    <value>Рускi</value>
+  </data>
+  <data name="СделатьСтавку" xml:space="preserve">
+    <value>Зрабіць стаўку</value>
+  </data>
+  <data name="СлезноПопраситьАдминаОПовышенииСтатуса" xml:space="preserve">
+    <value>Слёзна попрасить адмін аб павышэнні статусу</value>
+  </data>
+  <data name="Сохранить" xml:space="preserve">
+    <value>Захаваць</value>
+  </data>
+  <data name="Статус" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="СтыдноОписывать" xml:space="preserve">
+    <value>Сорамна нават апісваць , тое, што выстаўляеш ?</value>
+  </data>
+  <data name="ТебеОноНадо" xml:space="preserve">
+    <value>Табе яно трэба ?</value>
+  </data>
+  <data name="ТекущаяЦена" xml:space="preserve">
+    <value>Бягучая кошт</value>
+  </data>
+  <data name="Товар" xml:space="preserve">
+    <value>Тавар</value>
+  </data>
+  <data name="Товары" xml:space="preserve">
+    <value>Тавары</value>
+  </data>
+  <data name="ТыДажеУдалитьТолкомНичегоНеМожешь" xml:space="preserve">
+    <value>Ты нават выдаліць толкам нічога не можаш</value>
+  </data>
+  <data name="ТыСНами" xml:space="preserve">
+    <value>ты з намі</value>
+  </data>
+  <data name="ТыТочноХочешьЕгоПовысить" xml:space="preserve">
+    <value>Ты сапраўды хочаш яго павысіць ?</value>
+  </data>
+  <data name="УдалениеПользователя" xml:space="preserve">
+    <value>Выдаленне карыстальніка</value>
+  </data>
+  <data name="Удалить" xml:space="preserve">
+    <value>Выдаліць</value>
+  </data>
+  <data name="УдалитьАккаунт" xml:space="preserve">
+    <value>Выдаліць рахунак</value>
+  </data>
+  <data name="УдалитьПродукт" xml:space="preserve">
+    <value>Выдаліць прадукт</value>
+  </data>
+  <data name="УкажитеФамилию" xml:space="preserve">
+    <value>Ды пакажы хаця б не сваю</value>
+  </data>
+  <data name="УНасУжеТакойЕсть" xml:space="preserve">
+    <value>У нас ужо такі ёсць , будзь арыгінальным</value>
+  </data>
+  <data name="Фамилия" xml:space="preserve">
+    <value>Прозвішча</value>
+  </data>
+  <data name="ФоткуНужноПрикрепить" xml:space="preserve">
+    <value>Хоць левую фотку , але трэба прымацаваць</value>
+  </data>
+  <data name="ЧасовойПояс" xml:space="preserve">
+    <value>Гадзінны пояс</value>
+  </data>
+  <data name="ЧтоНеПроскочил" xml:space="preserve">
+    <value>Што не праскочыў ? Ну давай поугадывай яшчэ ) ))</value>
+  </data>
+  <data name="ЧтоУбегаешь" xml:space="preserve">
+    <value>Што ўцякаеш ?</value>
+  </data>
+  <data name="ШагСтавки" xml:space="preserve">
+    <value>Крок стаўкі</value>
+  </data>
+  <data name="Язык" xml:space="preserve">
+    <value>Мова</value>
+  </data>
+  <data name="НуИГдеВЫНаходитесь" xml:space="preserve">
+    <value>Ну і дзе нам потым вас шукаць??</value>
+  </data>
+  <data name="КакойЯзык" xml:space="preserve">
+    <value>І на якой мове з вамі размаўляць?</value>
+  </data>
+  <data name="ИмяИФамилия" xml:space="preserve">
+    <value>Iмя i Прозвишча</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>EmailBY</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Тэлефон</value>
+  </data>
+  <data name="Адресс" xml:space="preserve">
+    <value>Адрас</value>
+  </data>
+</root>
