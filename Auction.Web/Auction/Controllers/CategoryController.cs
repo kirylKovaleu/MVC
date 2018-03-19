@@ -1,6 +1,5 @@
 ﻿using Auction.Business.Services.Interfaces;
 using Auction.Configure;
-using Auction.Filters;
 using Auction.Models;
 using Autofac;
 using AutoMapper;

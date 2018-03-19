@@ -1,10 +1,5 @@
 ﻿using Auction.Configure;
-using Auction.Filters;
 using Auction.Models;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Auction.Controllers

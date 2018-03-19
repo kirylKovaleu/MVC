@@ -1,12 +1,10 @@
 ﻿using Auction.Business.Services.Interfaces;
 using Auction.Configure;
-using Auction.Filters;
 using Auction.Models;
 using Autofac;
 using AutoMapper;
 using NLog;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Web.Mvc;
